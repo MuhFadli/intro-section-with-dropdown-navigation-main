@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./assets/bootstrap-5.1.3/css/bootstrap.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+      <nav class="nav navbar navbar-expand-lg">
+        <div class="brand navbar-brand">
+          <h2 class="logo"><a href="index.html">snap</a></h2>
+          <!-- <a href="index.html"><h2 class="logo">snap</h2></a> -->
+        </div>
+        <div class="overlay"></div>
+          <ul class="navbar-nav text-capitalize ms-4">
+            <li class="nav-item dropdown me-2 ms-2">
+              <a href="" 
+              class="nav-link active dropdown-btn"
+              aria-current="page"
+              id="navbarDropdown"
+              role="button"
+              data-bs-auto-close="inside"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >
+              features <i class="ms-1"><svg id="iconArr" class="arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-todo.svg" alt="icon-todo"></i> Todo List</a></li>
+              <li><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-calendar.svg" alt="icon-calendar"></i> Calender</a></li>
+              <li><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-reminders.svg" alt="icon-reminders"></i> Reminders</a></li>
+              <li><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-planning.svg" alt="icon-planning"></i> Planning</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown mx-3 me-2">
+              <a
+              class="nav-link dropdown-btn"
+              aria-current="page"
+              id="navbarDropdown"
+              data-bs-auto-close="false"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >
+                company <i class="ms-1"><img class="arrow-down" src="./assets/images/icon-arrow-down.svg" alt="icon-arrow-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                <li class="nav-item"><a class="dropdown-item px-4" href="#">History</a></li>
+                <li class="nav-item"><a class="dropdown-item px-4" href="#">Our Team</a></li>
+                <li class="nav-item"><a class="dropdown-item px-4" href="#">Blog</a></li>
+              </ul>
+            </li>
+            </li>
+            <li class="nav-item mx-3 me-2"><a href="" class="nav-link">careers</a></li>
+            <li class="nav-item ms-3 me-0"><a href="" class="nav-link">about</a></li>
+            <a href="#"><div class="fa fa-chevron-right rotate"></div></a>
+          </ul>
+          <span class="navbar-nav ms-auto menu_button">
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <li class="nav-item mx-3"><button class="btn_login text-capitalize"><a href="" class="nav-link">login</a></button></li>
+            <li class="nav-item ms-3 me-0"><button class="btn_regist text-capitalize"><a href="" class="nav-link">register</a></button></li>
+          </span>
+      </nav>
+
+      <Main class="container d-flex hero_section py-5">
+        <div class="left">
+          <header class="heading">
+            <h1 class="teks_heading">Make 
+              <br/> 
+              remote work
+            </h1>
+          </header>
+          <Main>
+            <article class="content">
+              <p>
+                Get your team in sync, no matter your location. Streamline processes, create 
+                team rituals, and watch productivity soar.
+              </p>
+            </article>
+            <!-- <button class="btn_cta"><a href="">Learn more</a></button> -->
+            <a href=""><button class="btn_cta">Learn more</button></a>
+          </Main>
+          <footer class="sponsors">
+            <span class="sponsor mx-3 ms-0 w-100 h-100"><img src="./assets/images/client-databiz.svg" alt=""></span>
+            <span class="sponsor mx-3 w-100 h-100"><img src="./assets/images/client-audiophile.svg" alt=""></span>
+            <span class="sponsor mx-3 w-100 h-100"><img src="./assets/images/client-meet.svg" alt=""></span>
+            <span class="sponsor mx-3 me-0 w-100 h-100"><img src="./assets/images/client-maker.svg" alt=""></span>
+         </footer>
+        </div>
+        <div class="right hero_image"></div>
+      </Main>
+    </header>
+    
+    <nav class="mobile-navbar navbar">
+      <ul class="mobile-nav-menu navbar-nav">
+        <div class="close_btn">&times;</div>
+        <li class="mobile-nav-item dropdown"><a href=""
+          class="mobile-navlink dropdown-btn"
+          aria-current="page"
+          id="navbarDropdown"
+          data-bs-auto-close="false"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >Features <i class="ms-1"><img class="arrow-down" src="./assets/images/icon-arrow-down.svg" alt="icon-arrow-down"></i></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="mobile-nav-item"><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-todo.svg" alt="icon-todo"></i> Todo List</a></li>
+            <li class="mobile-nav-item"><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-calendar.svg" alt="icon-calendar"></i> Calender</a></li>
+            <li class="mobile-nav-item"><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-reminders.svg" alt="icon-reminders"></i> Reminders</a></li>
+            <li class="mobile-nav-item"><a class="dropdown-item" href="#"><i class="px-2"><img src="./assets/images/icon-planning.svg" alt="icon-planning"></i> Planning</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item dropdown"><a href="" class="mobile-navlink dropdown-btn"
+          aria-current="page"
+          id="navbarDropdown"
+          data-bs-auto-close="false"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >Company <i class="ms-1"><img class="arrow-down" src="./assets/images/icon-arrow-down.svg" alt="icon-arrow-down"></i></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="mobile-nav-item"><a class="dropdown-item px-4" href="#">History</a></li>
+            <li class="mobile-nav-item"><a class="dropdown-item px-4" href="#">Our Team</a></li>
+            <li class="mobile-nav-item"><a class="dropdown-item px-4" href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="" class="mobile-navlink">Careers</a></li>
+        <li class="mobile-nav-item"><a href="" class="mobile-navlink">About</a></li>
+        <li class="mobile-nav-item"><a href="" class="mobile-navlink btn btn_login">Login</a></li>
+        <li class="mobile-nav-item"><a href="" class="mobile-navlink btn btn_regist">Register</a></li>
+      </ul>
+    </nav>
+
+</body>
+<script src="./assets/bootstrap-5.1.3/js/bootstrap.js"></script>
+<script src="./script.js"></script>
+</html>
